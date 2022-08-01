@@ -1,0 +1,65 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE4575FEDE4575FED",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../basic_input_output_vivado.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "basic_input_output_0": ""
+    },
+    "ports": {
+      "sw": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "led": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "basic_input_output_0": {
+        "vlnv": "xilinx.com:hls:basic_input_output:1.0",
+        "xci_name": "design_1_basic_input_output_0_1",
+        "xci_path": "ip\\design_1_basic_input_output_0_1\\design_1_basic_input_output_0_1.xci",
+        "inst_hier_path": "basic_input_output_0"
+      }
+    },
+    "nets": {
+      "input_r_0_1": {
+        "ports": [
+          "sw",
+          "basic_input_output_0/input_r"
+        ]
+      },
+      "basic_input_output_0_output_r": {
+        "ports": [
+          "basic_input_output_0/output_r",
+          "led"
+        ]
+      }
+    }
+  }
+}
